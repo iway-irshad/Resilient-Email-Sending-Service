@@ -1,0 +1,15 @@
+{% extends 'blog\base.html' %}
+
+{% block content %}
+
+    {% for post in posts %}
+        <article class="post">
+            {% if post.published_date %}
+                <time class="date">Published : {{post.published_date}}</time>
+            {% endif %}
+            <h2><a href=" / ">{{post.title}}</a></h2>
+            <p>{{post.text|linebreaksbr}}</p>
+        </article>
+    {% endfor %}
+
+{% endblock %}
