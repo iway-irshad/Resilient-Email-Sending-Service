@@ -58,7 +58,7 @@ resilient_email_sending_service/
 
 ## Local setup
 ```bash
-git clone <repo>
+git clone https://github.com/iway-irshad/Resilient-Email-Sending-Service.git
 cd email-service
 npm install
 npm run dev
